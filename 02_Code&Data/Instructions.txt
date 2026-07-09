@@ -1,0 +1,27 @@
+1.Open your Google Drive.
+
+2.Create a main folder named exactly: ProiectSpeech
+
+3.Inside ProiectSpeech, create two subfolders:
+-ToBeConverted
+-ToTranscribe
+
+4.Upload your video file (e.g., .mp4, .mov, .mkv) into the ToBeConverted folder in your Drive.
+
+5.Open the Colab notebook and run the first three code cells (installing tools, mounting your drive, and executing the main script).
+
+6.Once the code finishes running:
+-Your original video will be moved automatically to a new folder called Videos.
+-A new folder called AudioOutput will appear, containing a subfolder.
+-Inside that project folder's Metadata folder, a file named [YourVideoName]_Timeline.txt will be generated.
+
+7.Go into your Google Drive and navigate to:
+ProiectSpeech > AudioOutput > [YourVideoName]_Project > Metadata.
+
+8.Locate the [YourVideoName]_Timeline.txt file and move (or copy) it into the ToTranscribe
+
+9.Go back to Colab and run the last two cells (installing Whisper and running the transcription script).
+
+10.The AI will process each audio clip. Once it finishes:
+-A final text file named [YourVideoName]_Transcript.txt will be created inside a new Whisper folder in your project directory.
+-The timeline file will automatically be moved out of ToTranscribe and back into its original Metadata folder.
